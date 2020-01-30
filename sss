@@ -1,0 +1,7 @@
+A fundamental trade-off in dynamic websites is, well, they’re dynamic. Each time a user requests a page, the Web server makes all sorts of calculations – from database queries to template rendering to business logic – to create the page that your site’s visitor sees. This is a lot more expensive, from a processing-overhead perspective, than your standard read-a-file-off-the-filesystem server arrangement.
+
+For most Web applications, this overhead isn’t a big deal. Most Web applications aren’t washingtonpost.com or slashdot.org; they’re small- to medium-sized sites with so-so traffic. But for medium- to high-traffic sites, it’s essential to cut as much overhead as possible.
+
+That’s where caching comes in.
+
+To cache something is to save the result of an expensive calculation so that you don’t have to perform the calculation next time. Here’s some pseudocode explaining how this would work for a dynamically generated Web page:
